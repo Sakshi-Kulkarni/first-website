@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x:hidden ;
+    color: darkmagenta;
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    background-image: url("image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    height: 100vh;
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin: auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    color: darkmagenta;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:90%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom:3px solid darkmagenta;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: darkmagenta;
+    font-size: 140%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 40px,50px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: initial;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.btn-full{
+    background-color: transparent;
+    color: darkmagenta;
+    margin-right: 15px;
+    border: 1px solid darkmagenta;
+}
+.btn-full:hover{
+    background-color:darkturquoise;
+}
+.btn-nav{
+    background-color:transparent;
+    color: darkturquoise;
+    border: 1px solid darkturquoise;
+}
+.btn-nav:hover{
+    background-color: darkmagenta;
+}
+.mobile-icon{display: none;}
+@media screen and(max-width:1180px){
+    .main-content-header{
+        width: 100%;
+        padding:0 2% ;
+        color: darkmagenta;
+    }
+}
+@media only screen and(max-width:998px){
+    h1{font-size: 200%;}
+} 
+@media only screen and(max-width:768px){
+    h1{font-size: 180% ;}
+    .main-nav{display: none;}
+
+    .mobile-icon {display: inline-block;
+        float:right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav li{
+        float: left;
+        display: block;
+    }
+    
+}

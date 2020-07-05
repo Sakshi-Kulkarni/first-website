@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>new one</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+        <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+               <div class="row clearfix">
+                 <img src="image2.png" class="logo">
+                 <ul class="main-nav animate__backInDown" id="check-class">
+                     <li><a href="a">about</a> </li>
+                     <li><a href="a">info</a> </li>
+                     <li><a href="a">sign up</a> </li>
+                     <li><a href="a">check more</a> </li>
+                 </ul>
+                 <a href="a"class="mobile icon"onclick="slideshow()"><i class="fa fa-align-justify"></i></a>
+               </div> 
+            </nav>
+            <div class="main-content-header">
+                <h1>Welcome to my <span>First Website</span><br>
+                check whether it is fantastic or not</h1>
+                <a href="a" class="btn btn-full">click to order</a>
+                <a href="a" class="btn btn-full">click to sign up</a>
+            </div>
+        </header>
+        <script type="text/javascript">
+        function slideshow(){
+            var x=document.getElementById('check-class')
+            if(x.style.display==="none"){
+                x.style.display="block";
+            }else{
+                x.style.display="none";
+            }
+
+        }
+        </script>
+    </body>
+</html>
